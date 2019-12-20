@@ -1,0 +1,9 @@
+name: 'data build bot'
+description: 'Runs PRs from community contributors'
+inputs:
+  pr-number:
+    description: 'Number of the PR'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
